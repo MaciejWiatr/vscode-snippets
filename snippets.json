@@ -35,9 +35,9 @@
     "scope": "typescript,typescriptreact",
     "prefix": "rafc",
     "body": [
-      "interface ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props {}",
+      "interface ${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props {}",
       "",
-      "const ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}:FC<${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props> = () => {",
+      "const ${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}:FC<${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props> = () => {",
       "\treturn null",
       "}${2}"
     ],
@@ -47,9 +47,9 @@
     "scope": "typescript,typescriptreact",
     "prefix": "rafce",
     "body": [
-      "interface ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props {}",
+      "interface ${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props {}",
       "",
-      "export const ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}:FC<${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props> = () => {",
+      "export const ${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}:FC<${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Props> = () => {",
       "\treturn null",
       "}${2}"
     ],
@@ -60,11 +60,11 @@
     "prefix": "rah",
     "description": "Generate new React Arrow Function Hook",
     "body": [
-      "interface Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options {}",
+      "interface Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options {}",
       "",
-      "interface Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns {}",
+      "interface Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns {}",
       "",
-      "const use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}} = (options: Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options): Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns => {",
+      "const use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}} = (options: Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options): Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns => {",
       "\tconst {} = options",
       "",
       "\t return {}",
@@ -76,11 +76,11 @@
     "prefix": "rahe",
     "description": "Generate new React Arrow Function Hook with export",
     "body": [
-      "interface Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options {}",
+      "interface Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options {}",
       "",
-      "interface Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns {}",
+      "interface Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns {}",
       "",
-      "export const use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}} = (options: Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options): Use${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns => {",
+      "export const use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}} = (options: Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Options): Use${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}Returns => {",
       "\tconst {} = options",
       "",
       "\t return {}",

@@ -19,6 +19,9 @@ const currentDir = "${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1}/}}";
 const currentDirPascalCase =
   "${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}";
 
+const currentFilePascalCase =
+  "${1:${TM_FILENAME_BASE/^.+[\\/\\\\]+(.*)$/${1:/capitalize}/g}}";
+
 const snippets = {
   "Next.js Async Page": {
     ...globals,
@@ -56,9 +59,9 @@ const snippets = {
     ...globals,
     prefix: "rafc",
     body: [
-      `interface ${currentDirPascalCase}Props {}`,
+      `interface ${currentFilePascalCase}Props {}`,
       ``,
-      `const ${currentDirPascalCase}:FC<${currentDirPascalCase}Props> = () => {`,
+      `const ${currentFilePascalCase}:FC<${currentFilePascalCase}Props> = () => {`,
       `\treturn null`,
       "}${2}",
     ],
@@ -68,9 +71,9 @@ const snippets = {
     ...globals,
     prefix: "rafce",
     body: [
-      `interface ${currentDirPascalCase}Props {}`,
+      `interface ${currentFilePascalCase}Props {}`,
       ``,
-      `export const ${currentDirPascalCase}:FC<${currentDirPascalCase}Props> = () => {`,
+      `export const ${currentFilePascalCase}:FC<${currentFilePascalCase}Props> = () => {`,
       `\treturn null`,
       "}${2}",
     ],
@@ -82,11 +85,11 @@ const snippets = {
     prefix: "rah",
     description: "Generate new React Arrow Function Hook",
     body: [
-      `interface Use${currentDirPascalCase}Options {}`,
+      `interface Use${currentFilePascalCase}Options {}`,
       ``,
-      `interface Use${currentDirPascalCase}Returns {}`,
+      `interface Use${currentFilePascalCase}Returns {}`,
       ``,
-      `const use${currentDirPascalCase} = (options: Use${currentDirPascalCase}Options): Use${currentDirPascalCase}Returns => {`,
+      `const use${currentFilePascalCase} = (options: Use${currentFilePascalCase}Options): Use${currentFilePascalCase}Returns => {`,
       `\tconst {} = options`,
       ``,
       `\t return {}`,
@@ -98,11 +101,11 @@ const snippets = {
     prefix: "rahe",
     description: "Generate new React Arrow Function Hook with export",
     body: [
-      `interface Use${currentDirPascalCase}Options {}`,
+      `interface Use${currentFilePascalCase}Options {}`,
       ``,
-      `interface Use${currentDirPascalCase}Returns {}`,
+      `interface Use${currentFilePascalCase}Returns {}`,
       ``,
-      `export const use${currentDirPascalCase} = (options: Use${currentDirPascalCase}Options): Use${currentDirPascalCase}Returns => {`,
+      `export const use${currentFilePascalCase} = (options: Use${currentFilePascalCase}Options): Use${currentFilePascalCase}Returns => {`,
       `\tconst {} = options`,
       ``,
       `\t return {}`,
